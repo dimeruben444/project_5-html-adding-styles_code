@@ -1,0 +1,70 @@
+@use "../abstracts/index" as *;
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+  figure{
+    margin: 0;
+    img{
+      width: 16rem;
+      height: auto;      
+    }
+  }
+
+  ul{
+    display: flex;
+    gap: 1rem;
+    @include font-variant(tittle);
+    font-size: 1.2rem;
+    align-items: center;
+    
+    li a{
+      padding: 0.5rem 1.5rem; 
+
+      &:hover{
+        background: linear-gradient($gradient-color); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        text-decoration: underline;
+        
+       
+
+      }
+    }
+
+
+    div{
+      display: flex;
+      gap: 1rem;
+      padding-top: 0.15rem ;
+      padding-bottom:0.15rem;
+
+    }
+
+    div.gradient{
+      background: linear-gradient($gradient-color);
+      display: flex;
+      gap: 1rem;
+      padding-top: 0.15rem ;
+      padding-bottom:0.15rem;   
+      margin-left: 2.5rem;   
+      @include font-variant(tittle);
+      font-size: 1.2rem;
+      li a{
+        padding: 0.5rem;
+        &:hover{
+          -webkit-text-fill-color:black;
+        }    
+        
+      }
+
+    }
+
+    
+
+  }
+
+}
+
+

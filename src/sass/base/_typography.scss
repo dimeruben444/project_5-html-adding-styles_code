@@ -1,0 +1,146 @@
+@use "../abstracts/index" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+p {
+  margin: 0 0 1em 0;
+}
+
+
+@font-face {
+    font-family: 'Yrsa';
+    src: url('../../assets/fonts/Yrsa-Light.eot');
+    src: url('../../assets/fonts/Yrsa-Light.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Yrsa-Light.woff2') format('woff2'),
+         url('../../assets/fonts/Yrsa-Light.woff') format('woff'),
+         url('../../assets/fonts/Yrsa-Light.ttf') format('truetype'),
+         url('../../assets/fonts/Yrsa-Light.svg#Yrsa-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yrsa';
+    src: url('../../assets/fonts/Yrsa-SemiBold.eot');
+    src: url('../../assets/fonts/Yrsa-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Yrsa-SemiBold.woff2') format('woff2'),
+         url('../../assets/fonts/Yrsa-SemiBold.woff') format('woff'),
+         url('../../assets/fonts/Yrsa-SemiBold.ttf') format('truetype'),
+         url('../../assets/fonts/Yrsa-SemiBold.svg#Yrsa-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yrsa';
+    src: url('../../assets/fonts/Yrsa-Bold.eot');
+    src: url('../../assets/fonts/Yrsa-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Yrsa-Bold.woff2') format('woff2'),
+         url('../../assets/fonts/Yrsa-Bold.woff') format('woff'),
+         url('../../assets/fonts/Yrsa-Bold.ttf') format('truetype'),
+         url('../../assets/fonts/Yrsa-Bold.svg#Yrsa-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yrsa';
+    src: url('../../assets/fonts/Yrsa-Medium.eot');
+    src: url('../../assets/fonts/Yrsa-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Yrsa-Medium.woff2') format('woff2'),
+         url('../../assets/fonts/Yrsa-Medium.woff') format('woff'),
+         url('../../assets/fonts/Yrsa-Medium.ttf') format('truetype'),
+         url('../../assets/fonts/Yrsa-Medium.svg#Yrsa-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yrsa';
+    src: url('../../assets/fonts/Yrsa-Regular.eot');
+    src: url('../../assets/fonts/Yrsa-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Yrsa-Regular.woff2') format('woff2'),
+         url('../../assets/fonts/Yrsa-Regular.woff') format('woff'),
+         url('../../assets/fonts/Yrsa-Regular.ttf') format('truetype'),
+         url('../../assets/fonts/Yrsa-Regular.svg#Yrsa-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../assets/fonts/Kanit-Regular.eot');
+    src: url('../../assets/fonts/Kanit-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Kanit-Regular.woff2') format('woff2'),
+         url('../../assets/fonts/Kanit-Regular.woff') format('woff'),
+         url('../../assets/fonts/Kanit-Regular.ttf') format('truetype'),
+         url('../../assets/fonts/Kanit-Regular.svg#Kanit-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../assets/fonts/Kanit-SemiBold.eot');
+    src: url('../../assets/fonts/Kanit-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Kanit-SemiBold.woff2') format('woff2'),
+         url('../../assets/fonts/Kanit-SemiBold.woff') format('woff'),
+         url('../../assets/fonts/Kanit-SemiBold.ttf') format('truetype'),
+         url('../../assets/fonts/Kanit-SemiBold.svg#Kanit-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../assets/fonts/Kanit-Medium.eot');
+    src: url('../../assets/fonts/Kanit-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Kanit-Medium.woff2') format('woff2'),
+         url('../../assets/fonts/Kanit-Medium.woff') format('woff'),
+         url('../../assets/fonts/Kanit-Medium.ttf') format('truetype'),
+         url('../../assets/fonts/Kanit-Medium.svg#Kanit-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../assets/fonts/Kanit-Light.eot');
+    src: url('../../assets/fonts/Kanit-Light.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Kanit-Light.woff2') format('woff2'),
+         url('../../assets/fonts/Kanit-Light.woff') format('woff'),
+         url('../../assets/fonts/Kanit-Light.ttf') format('truetype'),
+         url('../../assets/fonts/Kanit-Light.svg#Kanit-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../assets/fonts/Kanit-Bold.eot');
+    src: url('../../assets/fonts/Kanit-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/Kanit-Bold.woff2') format('woff2'),
+         url('../../assets/fonts/Kanit-Bold.woff') format('woff'),
+         url('../../assets/fonts/Kanit-Bold.ttf') format('truetype'),
+         url('../../assets/fonts/Kanit-Bold.svg#Kanit-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

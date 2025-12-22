@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+// RESPONSIVE BREAK-POINTS
+
+@mixin breakpoint($bp) {
+
+    @if $bp == tablet{
+        @media (min-width: $bp-tablet){
+            @content;
+        }
+    }
+
+    @if $bp == tablethorizontal{
+        @media (min-width: $bp-tablet-horizontal){
+            @content;
+        }
+    }
+
+    @if $bp == desktop{
+        @media (min-width: $bp-desktop){
+            @content;
+        }
+    }
+
+    @if $bp == desktopm{
+        @media (min-width: $bp-desktop-m){
+            @content;
+        }
+    }
+    @if $bp == desktopl{
+        @media (min-width: $bp-desktop-l){
+            @content;
+        }
+    }
+
+    @if $bp == desktopxl{
+        @media (min-width: $bp-desktop-xl){
+            @content;
+        }
+    }
+}
+
+
+//FONTS  
+
+@mixin font-variant ($font){
+    @if $font == tittle {
+        font-family: $p-font;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    @if $font == text {
+        font-family: $p-font;
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+}
