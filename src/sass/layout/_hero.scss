@@ -1,1 +1,89 @@
 @use "../abstracts/index" as *;
+
+
+.hero{
+    position: relative;
+    figure{
+        margin: 0;
+        overflow: hidden;
+
+    }
+
+    .hero__container{
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        
+        
+
+        h1{
+            position: relative;
+            top: 120px;
+            @include font-variant(tittle);
+            font-size: 5rem;
+            padding: 3rem;
+            margin-left: 20px;
+            width: 670px;
+            line-height: 4rem;
+            
+            
+            transform: perspective(350px) rotateY(12deg)
+            rotateZ(-8deg)
+            rotateX(5deg)
+            ; 
+            
+           
+            
+            transform-origin: left;
+
+            
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), -4px 0px 10px #dff955, 4px 0px 14px #52c5e4, 0px 0px 20px #52c5e4;
+            
+        }
+
+            
+            .hero__parrafo1 , .hero__parrafo2{ 
+                @include font-variant(text);
+                
+                padding: 1rem 1.5rem;
+                background: rgba(0, 0, 0, 0.30); //caja semitransparente 
+                backdrop-filter: blur(1px); // efecto cristal 
+                border-radius: 12px;
+                z-index: 1;
+                text-shadow: #dff955 0px 0px 5px, #dff955 0px 0px 10px, #dff955 0px 0px 15px, #52c5e4 0px 0px 20px, #52c5e4 0px 0px 30px, #52c5e4 0px 0px 40px, #52c5e4 0px 0px 50px, #52c5e4 0px 0px 75px, 2px 2px 2px rgba(0,0,0,0); 
+
+
+            } 
+            /* Borde brillante */
+
+            .hero__parrafo1::before, .hero__parrafo2::before  { 
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: inherit; 
+                padding: 2px; /* grosor del borde */
+                background: linear-gradient(45deg, #dff955, #52c5e4);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor; mask-composite: exclude; z-index: -1; 
+            }
+
+            .hero__parrafo1{
+                position: absolute; 
+                right: 150px;
+                top: 5px;
+                display: inline-block;
+                width: 620px;
+            }
+
+            .hero__parrafo2{
+                position: absolute; 
+                top: 270px;
+                right: 5px;
+                display: inline-block;
+                width: 620px;
+            }
+
+           
+    }
+}
