@@ -4,9 +4,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  margin-bottom: 1.5rem;
 
-  
   figure{
     margin: 0;
     img{
@@ -19,7 +18,7 @@ header {
     display: flex;
     gap: 1.8rem;
     @include font-variant(tittle);
-    
+    font-family: $s-font;
     font-size: 1.2rem;
     align-items: center;
     position: relative;
@@ -29,43 +28,31 @@ header {
       padding: 0.5rem 1.5rem; 
       position: relative;
       display: block;
+      @include font-variant(text);
 
       &:hover{
-        background: linear-gradient($gradient-color); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        text-decoration: none;
-
-       
         
-       
-
+        @include font-gradient();
       }
     }
 
-
-  
     div.gradient{
       background: linear-gradient($gradient-color);
       display: flex;
       gap: 0.3rem;
-      margin-left: auto;
-         
-         
+      margin-left: auto;  
       @include font-variant(tittle);
       font-size: 1rem;
+
       a{
         padding: 0.2rem;
         &:hover{
           -webkit-text-fill-color:black;
-        }    
-        
+        }      
       }
-
     }
-
-    
-
   }
-
 }
+
 
 

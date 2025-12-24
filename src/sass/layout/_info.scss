@@ -1,0 +1,102 @@
+@use "../abstracts/index" as *;
+
+
+.info0{
+
+  margin: 1.5rem 0;
+  text-align: center;
+
+  @include box();
+  @include box-sadow();
+  
+
+  h1{
+    @include font-variant(tittle);
+    font-size: 3rem;
+    text-shadow: 2px 2px 0 $blue-color, 2px -2px 0 $blue-color, -2px 2px 0 $blue-color, -2px -2px 0 $blue-color, 2px 0px 0 $blue-color, 0px 2px 0 $blue-color, -2px 0px 0 $blue-color, 0px -2px 0 $blue-color;
+
+  }
+  p{
+    @include font-variant(text);
+    @include text-sadow();
+
+  }
+}
+
+
+
+.info1 , .info2{
+  @include box();
+  @include box-sadow();
+  padding: 2rem;
+
+
+  h2{
+    @include font-gradient();
+    @include font-variant(tittle);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    display: block;
+    margin-bottom: 4rem;
+
+    ;
+  }
+}
+
+.info1-container ,.info2-container{
+
+  display: flex;
+  gap: 1.4rem;
+
+  
+
+  article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+
+    
+    
+    h3{
+      
+      @include font-variant(tittle);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: $white-color;
+      text-shadow: 2px 2px 0 $blue-color, 2px -2px 0 $blue-color, -2px 2px 0 $blue-color, -2px -2px 0 $blue-color, 2px 0px 0 $blue-color, 0px 2px 0 $blue-color, -2px 0px 0 $blue-color, 0px -2px 0 $blue-color;
+    }
+
+    figure{
+      margin: 0;
+
+      margin-left: auto; margin-right: auto; text-align: center; /* centra el figcaption */ display: block;
+
+      figcaption{
+        @include font-variant(text);
+        font-size: 1rem;
+        font-weight: 600;
+        color: $green-color;
+      }
+
+      img{
+        border-radius: 50%;
+        border: 2px solid $white-color;
+      }
+      
+      
+    }
+    p{
+      @include font-variant(text);
+      text-align: center;
+
+
+    }
+  }
+  
+
+  
+}

@@ -1,1 +1,6 @@
 @use "../abstracts/index" as *;
+
+
+.btn{
+    @include btn()
+}
