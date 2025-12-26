@@ -63,6 +63,7 @@
     backdrop-filter: blur(2px); //  efecto cristal 
     border-radius: 12px;
     z-index: 1;
+    border: 2px solid $white-color;
 
 } 
 
@@ -72,6 +73,7 @@
 
     text-shadow: 2px 2px 4px rgba(0, 0, 0,4), -4px 0px 10px #dff955, 4px 0px 14#52c5e4, 0px 0px 20px #52c5e4;
     @include font-variant(text);
+
     
 
     &:hover{

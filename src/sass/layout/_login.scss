@@ -1,0 +1,122 @@
+@use "../abstracts/index" as *;
+
+
+fieldset.login{
+  background-color: darken($gray-color, 7%);
+}
+
+fieldset{
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto ;
+  width: fit-content;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  @include box();
+  @include box-sadow();
+  padding-top: 80px;
+  form .btn {
+        color: $white-color;
+    }
+  
+
+  legend{
+    text-align: center;
+    @include font-variant(text);
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1rem;
+    
+    h3{
+      font-weight: 700;
+      font-size:1.5rem;
+    }
+    
+  }
+  input,textarea{
+    color: $white-color;
+  }
+
+  input::placeholder, textarea::placeholder{    
+    color: black;
+    opacity: 1;
+  }
+
+  input ,select , textarea{
+    width: 340px;
+    margin: 0.4rem;
+    margin-bottom: 1rem;
+    background-color: $gray-color;
+    box-shadow: 0;
+    border: 0;
+    padding: 0.3rem;
+  }
+  
+  label{
+    @include font-variant(text)
+  }
+  input[type=file]{
+    background-color: none;
+   
+  }
+}
+
+
+section.registrate{
+  margin-left: auto;
+  margin-right: auto ;
+  width: fit-content;
+  margin-bottom: 5rem;
+  text-align: center;
+  
+  
+  p{
+    @include font-variant(text);
+  }
+
+}
+
+div.reg-container{
+  @include box();
+  @include box-sadow();
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  h1{
+    @include font-variant(tittle);
+    text-align: center;
+    @include font-gradient();
+  }
+  fieldset{
+    margin-top: 3rem;
+    
+    h3{
+      text-shadow: 2px 2px 0 $blue-color, 2px -2px 0 $blue-color, -2px 2px 0 $blue-color, -2px -2px 0 $blue-color, 2px 0px 0 $blue-color, 0px 2px 0 $blue-color, -2px 0px 0 $blue-color, 0px -2px 0 $blue-color;
+      
+    }
+
+  }
+
+  div.btn-container{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    .btn{
+      color: $white-color;
+      &:hover{
+        color: black;
+      }
+    }
+
+
+
+  }
+  
+
+}

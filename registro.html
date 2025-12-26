@@ -62,24 +62,27 @@
   <hr>
   <main>
     <article>
-      <fieldset>
+    
+      <div class="reg-container">
       
       <h1>Registrate</h1>
-
+      
+      <form action="" method="psot" name="registro">
       <section>
+        
         <fieldset> 
           <legend><h3>Datos personales</h3></legend> 
         
-    <form action="" method="psot" name="registro">
+        
             
               <label for="name">Nombre:</label><br>
-              <input type="text" name="nombre" id="name" size="25"><br>
+              <input placeholder="Ej: Ruben"  type="text" name="nombre" id="name" size="25"><br>
               
               <label for="lastname1">1ºApellido:</label><br>
-              <input type="text" name="apellido1" id="lastname1" size="25"><br>
+              <input placeholder="Ej: Lopez" type="text" name="apellido1" id="lastname1" size="25"><br>
               
               <label for="lastname2">2ºApellido:</label><br>
-              <input type="text" name="apellido2" id="lastname2" size="25"><br>
+              <input placeholder="Ej: Pérez" type="text" name="apellido2" id="lastname2" size="25"><br>
               
               <label for="fecha">Fecha de nacimiento:</label><br>
               <input type="date" name="fecha" id="fecha"  ><br>
@@ -95,16 +98,16 @@
           
 
               <label for="adress1">Calle:</label><br>
-              <input type="text" name="adress1" id="adress1" ><br>
+              <input placeholder="Ej: Avd Constitucion"  type="text" name="adress1" id="adress1" ><br>
 
               <label for="num">Número:</label><br>
-              <input type="number" name="adress2" id="num" size="5"><br>
+              <input placeholder="Ej: 19"  type="number" name="adress2" id="num" size="5"><br>
 
               <label for="p">Piso/Puerta</label><br>
-              <input type="text" name="adress3" id="p" ><br>
+              <input placeholder="Ej: 2ºA"  type="text" name="adress3" id="p" ><br>
 
               <label for="adress3">Codigo postal:</label><br>
-              <input type="number" name="adress3" id="adress3" maxlength="5" size="5"><br>
+              <input placeholder="Ej: 28840"  type="number" name="adress3" id="adress3" maxlength="5" size="5"><br>
 
               <label for="provincia">Provincia:</label><br>
               <select name="provincia" id="provincia">
@@ -175,10 +178,10 @@
           
 
               <label for="email">Email:</label><br>
-              <input type="email" name="email" id="email" ><br>
+              <input placeholder="Ej: tuemail@gmail.com"  type="email" name="email" id="email" ><br>
 
               <label for="url">Pagina web:</label><br>
-              <input type="url" name="url" id="url"><br>
+              <input placeholder="Ej: http//tupaginaweb.com "  type="url" name="url" id="url"><br>
 
               <label for="bio">Bio:</label><br>
               <textarea name="bio" id="bio" cols="30" rows="5"></textarea><br>
@@ -187,15 +190,19 @@
               <input type="file" name="foto" id="foto" ><br>
 
         </fieldset>
-      </section><br>
-        <button>Enviar</button>
-        <button type="reset">Vaciar formulario</button>
+        
+      </section>
+
+        <div class="btn-container">
+          <button class="btn ">Enviar</button>
+        </div>
   
       </form>
+      </div>
     </article>
 
 
-    </fieldset>
+    
 
 
 

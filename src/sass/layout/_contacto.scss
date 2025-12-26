@@ -1,0 +1,88 @@
+@use "../abstracts/index" as *;
+
+.contactenos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 3rem;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 3rem;
+  align-items: stretch;
+}
+
+fieldset.contact{
+  margin-top: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  
+  flex: 1;
+
+  .btn{
+    margin-bottom: 1rem;
+  }
+  
+  
+  
+  h1{
+    @include font-variant(tittle);
+    text-shadow: 2px 2px 0 $blue-color, 2px -2px 0 $blue-color, -2px 2px 0 $blue-color, -2px -2px 0 $blue-color, 2px 0px 0 $blue-color, 0px 2px 0 $blue-color, -2px 0px 0 $blue-color, 0px -2px 0 $blue-color;
+  }
+  p{
+    @include font-variant(text);
+    margin-bottom: 2rem;
+    font-size: 1rem
+  }
+}
+
+
+.cont2{
+  margin-top: 2rem;
+  border: 2px solid white;
+  @include box();
+  @include box-sadow();
+  
+  
+  h2{
+    @include font-variant(tittle);
+    text-shadow: 2px 2px 0 $blue-color, 2px -2px 0 $blue-color, -2px 2px 0 $blue-color, -2px -2px 0 $blue-color, 2px 0px 0 $blue-color, 0px 2px 0 $blue-color, -2px 0px 0 $blue-color, 0px -2px 0 $blue-color;
+    text-align: center;
+  }
+
+  iframe{
+    margin-top: 0.7rem;
+    
+  }
+
+  article.location dt{
+    @include font-variant(text);
+    font-weight: 200;
+    
+    
+  }
+
+}
+
+.cont1{
+  height: 100%;
+  
+  
+}
+
+.cont1 > article { 
+  height: 100%; /* el article ocupa toda la altura del section */ display: flex; 
+}
+.cont2 > div { 
+  height: 100%; /* el article ocupa toda la altura del section */ display: flex; 
+  flex-direction: column;
+}
+
+.cont2-possition{
+  position: absolute;
+  right: 36px;
+  bottom: 36px;
+  display: flex;
+  flex-direction: column;
+}

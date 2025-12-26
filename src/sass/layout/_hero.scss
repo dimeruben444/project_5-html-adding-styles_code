@@ -55,6 +55,7 @@
                 @include font-variant(text);
                 
                 @include box();
+                border: 0;
 
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), -4px 0px 10px #dff955, 4px 0px 14px #52c5e4, 0px 0px 20px #52c5e4;
 
