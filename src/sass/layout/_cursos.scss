@@ -1,0 +1,61 @@
+@use "../abstracts/index" as *;
+
+.cursos{
+  @include box();
+  @include box-sadow();
+
+  h1{
+    text-align: center;
+    @include font-variant(tittle);
+    font-size: 3rem;
+    text-shadow: 2px 2px 0 $blue-color, 2px -2px 0 $blue-color, -2px 2px 0 $blue-color, -2px -2px 0 $blue-color, 2px 0px 0 $blue-color, 0px 2px 0 $blue-color, -2px 0px 0 $blue-color, 0px -2px 0 $blue-color;
+      
+  }
+
+  p{
+    @include font-variant(text);
+    margin-bottom: 2rem;
+  }
+
+  ul.cursos-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li{
+      @include box();
+      margin-bottom: 2rem;
+      
+      text-align: center;
+      &:hover{
+        @include box-sadow();
+      }
+
+      a h2{
+        @include font-variant(text);
+        font-weight: 700;
+      }
+    }
+    li a img {
+      border-radius: 50%;
+      width: 200px;
+    }
+  }
+  
+}
+
+.cursos-fig{
+  margin: 0;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+  
+  img{
+    width: 100%;
+    border-radius: 1rem;
+    @include box-sadow();
+    @include box();
+    padding: 0;
+  }
+}
