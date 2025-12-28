@@ -3,6 +3,7 @@
 .cursos{
   @include box();
   @include box-sadow();
+  margin-bottom: 2rem;
 
   h1{
     text-align: center;
@@ -58,4 +59,33 @@
     @include box();
     padding: 0;
   }
+}
+
+
+// CURSOS ESPECIFICOS 
+
+
+
+.curso-especifico{
+  margin-bottom: 2rem;
+   display: flex;
+   gap: 2rem;
+
+  article{
+    width: 50%;
+    @include box();
+    @include box-sadow();
+    @include font-variant(text);
+
+    h2{
+      @include font-variant(tittle);
+      @include font-gradient;
+      display: inline-block;
+    }
+    h1{
+      @include font-variant(tittle);
+      text-shadow: 2px 2px 0 $blue-color, 2px -2px 0 $blue-color, -2px 2px 0 $blue-color, -2px -2px 0 $blue-color, 2px 0px 0 $blue-color, 0px 2px 0 $blue-color, -2px 0px 0 $blue-color, 0px -2px 0 $blue-color;
+    }
+  }
+
 }

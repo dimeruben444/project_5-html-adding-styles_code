@@ -1,8 +1,10 @@
+@use "sass:color" as c;
 @use "../abstracts/index" as *;
 
 
+
 fieldset.login{
-  background-color: darken($gray-color, 7%);
+  background-color: c.adjust($gray-color, $lightness: -7%);
 }
 
 fieldset{
