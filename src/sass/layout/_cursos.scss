@@ -4,7 +4,8 @@
   @include box();
   @include box-sadow();
   margin-bottom: 2rem;
-
+  padding-right: 2rem;
+  padding-left: 2rem;
   h1{
     text-align: center;
     @include font-variant(tittle);

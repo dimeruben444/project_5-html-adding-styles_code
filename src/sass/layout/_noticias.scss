@@ -1,0 +1,75 @@
+@use "../abstracts/index" as *;
+
+.noticias{
+  @include box();
+  @include box-sadow();
+  margin-bottom: 2rem;
+  h1{
+    @include font-variant(tittle);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 0 $blue-color, 2px -2px 0 $blue-color, -2px 2px 0 $blue-color, -2px -2px 0 $blue-color, 2px 0px 0 $blue-color, 0px 2px 0 $blue-color, -2px 0px 0 $blue-color, 0px -2px 0 $blue-color;
+  }
+  div{
+    display: flex;
+    gap: 2rem;
+  }
+
+  article{
+    @include box();
+    flex: 1 1 0;
+    min-width: 0;
+    padding-bottom: 2.5rem;
+    height: fit-content;
+
+    h2{
+      @include font-variant(tittle);
+      text-align:left;
+      margin-bottom: 1rem;
+      color: $green-color;
+      
+
+    }
+    p{
+      @include font-variant(text);
+      margin-bottom: 2rem;
+    }
+    a{
+      margin-top: auto;
+    }
+
+    
+
+  }
+
+}
+
+
+//NOTICIAS ESPECIFICAS
+
+article.n{
+  @include box();
+  @include box-sadow();
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  h1{
+    @include font-variant(tittle);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 0 $blue-color, 2px -2px 0 $blue-color, -2px 2px 0 $blue-color, -2px -2px 0 $blue-color, 2px 0px 0 $blue-color, 0px 2px 0 $blue-color, -2px 0px 0 $blue-color, 0px -2px 0 $blue-color;
+
+  }
+
+  p{
+    @include font-variant(text);
+    margin-bottom: 2rem;
+  }
+
+  a{
+    
+    display: inline-block;
+  }
+}

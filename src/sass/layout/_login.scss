@@ -122,3 +122,8 @@ div.reg-container{
   
 
 }
+
+button[type=reset] ,input [type=file] {
+  background-color: $gray-color;
+  color: $white-color;
+}
